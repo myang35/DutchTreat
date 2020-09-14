@@ -40,7 +40,7 @@ namespace DutchTreat.Data
                     UserName = "marvinyangs@hotmail.com"
                 };
 
-                var result = await _userManager.CreateAsync(user, "Peacelutheran1!");
+                var result = await _userManager.CreateAsync(user, "Marvin1!");
                 if (result != IdentityResult.Success)
                 {
                     throw new InvalidOperationException("Could not create new user in seeder");

@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <TypeScriptCompile Remove="node_modules\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Remove="Pages\Error.cshtml.cs" />
   </ItemGroup>
 
@@ -33,7 +37,7 @@
     <PackageReference Include="OdeToCode.UseNodeModules" Version="3.0.0" />
   </ItemGroup>
 
-	<Target Name="MyPublishScripts" BeforeTargets="BeforePublish">
+	<Target Name="BeforePublishScripts" BeforeTargets="BeforePublish">
 		<Exec Command="npm install" />
 		<Exec Command="gulp" />
 		<Exec Command="ng build" />

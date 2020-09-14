@@ -5,6 +5,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>IIS Express</ActiveDebugProfile>
-    <ShowAllFiles>false</ShowAllFiles>
+    <ShowAllFiles>true</ShowAllFiles>
+    <NameOfLastUsedPublishProfile>FolderProfile</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>
